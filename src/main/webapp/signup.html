@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    .container h2 {
+        text-align: center;
+    }
+    .container input[type="text"], .container input[type="email"], .container input[type="tel"], .container input[type="date"], .container input[type="password"], .container input[type="submit"], .container input[type="button"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .container input[type="submit"], .container input[type="button"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .container input[type="submit"]:hover, .container input[type="button"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form action="signUp" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number.." required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required> <br>
+        
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Your password.." required>
+
+      <!--  <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password.." required> -->
+
+        <input type="submit" value="Sign Up">
+        <input type="button" value="Cancel">
+    </form>
+</div>
+
+</body>
+</html>
